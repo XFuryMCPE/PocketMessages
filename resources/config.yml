@@ -1,0 +1,59 @@
+# _____           _        _   __  __                                   
+#|  __ \         | |      | | |  \/  |                                  
+#| |__) ___   ___| | _____| |_| \  / | ___ ___ ___  __ _  __ _  ___ ___ 
+#|  ___/ _ \ / __| |/ / _ | __| |\/| |/ _ / __/ __|/ _` |/ _` |/ _ / __|
+#| |  | (_) | (__|   |  __| |_| |  | |  __\__ \__ | (_| | (_| |  __\__ \
+#|_|   \___/ \___|_|\_\___|\__|_|  |_|\___|___|___/\__,_|\__, |\___|___/
+#                                                         __/ |         
+#                                                        |___/       
+#
+#PocketMessages plugin by XFuryMCPE
+#Create messages of different intervals
+
+#     _____             __ _       
+#    / ____|           / _(_)      
+#   | |     ___  _ __ | |_ _  __ _ 
+#   | |    / _ \| '_ \|  _| |/ _` |
+#   | |___| (_) | | | | | | | (_| |
+#    \_____\___/|_| |_|_| |_|\__, |
+#                             __/ |
+#                            |___/ 
+
+#Define symbol used for color in broadcasts
+color-symbol: "&"
+
+#Use a prefix?
+prefix: true
+#Prefix to use in front of messages (if enabled)
+prefix-name: "&bPocketMessages&a>"
+
+
+#    ____                      _               _       
+#   |  _ \                    | |             | |      
+#   | |_) |_ __ ___   __ _  __| | ___ __ _ ___| |_ ___ 
+#   |  _ <| '__/ _ \ / _` |/ _` |/ __/ _` / __| __/ __|
+#   | |_) | | | (_) | (_| | (_| | (_| (_| \__ | |_\__ \
+#   |____/|_|  \___/ \__,_|\__,_|\___\__,_|___/\__|___/
+#                                                      
+#                                                     
+
+1: #Create broadcasts to show every one second
+ order: straight #straight, reversed, or random
+ broadcasts:
+  - "This plugin was made by XFuryMCPE!"
+  - "Go follow him on Twitter @XFuryMCPE"
+  - "Join his server also Play.AvengeTech.net : 19132"
+  
+30:
+ order: random
+ broadcasts:
+  - "30 second intervals"
+  - "yeahhhh"
+  - "okay"
+  
+60:
+ order: reversed
+ broadcasts:
+  - "thing1"
+  - "thing2"
+  - "thing3"
