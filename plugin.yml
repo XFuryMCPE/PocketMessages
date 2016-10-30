@@ -1,0 +1,10 @@
+name: PocketMessages
+description: Very useful PocketMine broadcasting system
+author: XFuryMCPE
+api: [1.12.0,2.0.0,2.1.0]
+version: 0.0.1DEV
+
+permissions:
+ pocketm.op:
+  default: op
+  description: OP PocketMessages permission
