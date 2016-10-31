@@ -39,6 +39,7 @@ prefix-name: "&bPocketMessages&a>"
 
 1: #Create broadcasts to show every one second
  order: straight #straight, reversed, or random
+ active: false #decide whether this broadcast is on or not
  broadcasts:
   - "This plugin was made by XFuryMCPE!"
   - "Go follow him on Twitter @XFuryMCPE"
@@ -46,6 +47,7 @@ prefix-name: "&bPocketMessages&a>"
   
 30:
  order: random
+ active: true
  broadcasts:
   - "30 second intervals"
   - "yeahhhh"
@@ -53,6 +55,7 @@ prefix-name: "&bPocketMessages&a>"
   
 60:
  order: reversed
+ active: true
  broadcasts:
   - "thing1"
   - "thing2"
