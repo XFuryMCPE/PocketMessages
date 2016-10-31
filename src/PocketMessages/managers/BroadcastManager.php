@@ -17,8 +17,12 @@ class BroadcastManager{
       if(is_numeric($thing)){
         //Timer and task setup
         if(empty($things["active"]) || $things["active"] == true){
-          $this->plugin->timers[$thing] = 0;
-          array_push($this->plugin->plainkeys, $thing);
+          if(isset($this->plugin->plainkeys[$thing])){
+            $this->plugin->getLogger()->warning("Duplicate broadcast speed found! Disabling second one in loading sequence..");
+          }else{
+            $this->plugin->timers[$thing] = [0,0];
+            array_push($this->plugin->plainkeys, $thing);
+          }
         }
 
         //Broadcast setup
