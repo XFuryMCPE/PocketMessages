@@ -15,8 +15,11 @@ class BroadcastManager{
     $config = $config->getAll();
     foreach($config as $thing => $things){
       if(is_numeric($thing)){
-        //Timer setup
-        $this->plugin->timers[$thing] = 0;
+        //Timer and task setup
+        if(empty($things["active"]) || $things["active"] == true){
+          $this->plugin->timers[$thing] = 0;
+          array_push($this->plugin->plainkeys, $thing);
+        }
 
         //Broadcast setup
         $broadcasts = [];
