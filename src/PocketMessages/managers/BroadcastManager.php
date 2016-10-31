@@ -15,6 +15,10 @@ class BroadcastManager{
     $config = $config->getAll();
     foreach($config as $thing => $things){
       if(is_numeric($thing)){
+        //Timer setup
+        $this->plugin->timers[$thing] = 0;
+
+        //Broadcast setup
         $broadcasts = [];
         switch($things["order"]){
           case "normal":
