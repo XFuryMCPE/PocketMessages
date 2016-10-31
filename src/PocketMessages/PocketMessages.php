@@ -8,6 +8,7 @@ class PocketMessages extends PluginBase{
 
   public $broadcasts = [];
   public $timers = [];
+  public $plainkeys = [];
   
   public function onEnable(){
     $this->saveDefaultConfig();
