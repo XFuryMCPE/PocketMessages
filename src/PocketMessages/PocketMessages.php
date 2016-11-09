@@ -1,6 +1,7 @@
 <?php namespace PocketMessages;
 
 use PocketMessages\managers\BroadcastManager;
+use PocketMessages\tasks\BroadcastTask;
 
 use pocketmine\plugin\PluginBase;
 
@@ -13,6 +14,7 @@ class PocketMessages extends PluginBase{
   public function onEnable(){
     $this->saveDefaultConfig();
     $this->getBroadcastManager()->setup();
+    $this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this), 20);
   }
   
   public function getBroadcastManager(){
